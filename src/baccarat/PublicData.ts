@@ -6,8 +6,8 @@ let $PublicData = {
     uploadKeyStoreUrl: 'http://39.104.81.103:8551', // 上传keystore
     uploadTxUrl: "http://39.104.81.103/api/addTx.php", // 上传交易记录
     getContract: "http://39.104.81.103/api/requestContract.php", // 查询合约地址
-    ContractAddress: "0x781d06bE57fE3116a8D16d229a6a50C4B43bf30c",   //合约地址
-     // ContractAddress: location.href.split('?')[1],  //合约地址
+    // ContractAddress: "0x7468f623C060c3396E8Baa23F5512bDD2Bfd6B5f",   //合约地址
+    ContractAddress: location.href.split('?')[1],  //合约地址
 
     HOST: "ws://39.104.81.103:8561",
     Web3: null,  //web3对象
@@ -17,12 +17,12 @@ let $PublicData = {
     panel: null, //panel弹窗对象
     loading: null, //loading弹窗对象
     BetRecord: [], // 下注记录
-    password:null
+    password: null
 };
 
-    /**
-     * 账户相关
-     */
+/**
+ * 账户相关
+ */
 function getActiveAccount() {
     let wallet = $PublicData.Web3.eth.accounts.wallet
     let index = localStorage.getItem('active_account')
@@ -30,7 +30,7 @@ function getActiveAccount() {
     return activeAccount
 }
 
-function  ifWalletExist() {
+function ifWalletExist() {
     let walletJSON = localStorage.getItem('web3js_wallet')
     if (walletJSON) {
         return walletJSON

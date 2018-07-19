@@ -249,6 +249,7 @@ class Table extends eui.Component {
                  * 结算完获取服务时间和更新余额
                  */
                 if (event.returnValues) {
+                    console.log(event.returnValues);
                     this.tipsLabel.text = "结算时间";
                     this.timeNum.text = "--";
                     this.serverTime = 60;
@@ -270,7 +271,7 @@ class Table extends eui.Component {
      */
     private settlement(poker) {
         this.removeSmallCoin();
-        // console.log(poker);
+        console.log(poker);
         let playerPokers = poker[0]; // 闲家出的牌
         let bankerPokers = poker[1]; // 庄家出的牌
         let contractRes = poker[2]; // 合约中比牌结果
@@ -623,8 +624,6 @@ class Table extends eui.Component {
         let coin = $PublicData.Web3.utils.toWei(this.choosedBetCoin, 'ether');
         let ran = parseInt(String(Math.random() * (10 ** 18)));
         $PublicData.loading.visible = true;
-        // this.unlockAccount().then((bool) => {
-        //     if (bool) {
         $PublicData.ContractInstance.methods.sendBetInfo(address, Number(this.choosedBetObj), ran, coin)
             .send({
                 from: address,

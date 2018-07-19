@@ -161,5 +161,5 @@
 	<e:Rect id="pointDrawBet" width="332.13" height="77.58" x="684.47" y="523.46" anchorOffsetX="0" anchorOffsetY="0" fillAlpha="0" fillColor="0xFFFFFF" name="pointDrawBet"/>
 	<e:Rect id="playerBBet" width="353.34" height="109.4" x="397.5" y="633.46" anchorOffsetX="0" anchorOffsetY="0" fillAlpha="0" fillColor="0xFFFFFF" name="playerBBet"/>
 	<e:Rect id="bankerBBet" width="353.34" height="109.4" x="968.54" y="634.98" anchorOffsetX="0" anchorOffsetY="0" fillAlpha="0" fillColor="0xFFFFFF" name="bankerBBet"/>
-	<e:Label id="addPokerTxt" text="txt" y="345" anchorOffsetX="0" width="567.94" anchorOffsetY="0" height="64.85" verticalAlign="middle" textAlign="center" horizontalCenter="0" textColor="0x161513" visible="false"/>
+	<e:Label id="addPokerTxt" text="txt" y="425" anchorOffsetX="0" width="567.94" anchorOffsetY="0" height="64.85" verticalAlign="middle" textAlign="center" horizontalCenter="0" textColor="0x161513" visible="false"/>
 </e:Skin>

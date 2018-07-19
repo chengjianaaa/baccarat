@@ -68,26 +68,25 @@
 		<e:Label id="pointDrawWin" text="0" x="846" y="838" textColor="0x302A75" size="34" anchorOffsetX="0" width="103" anchorOffsetY="0" height="37" verticalAlign="middle" textAlign="center"/>
 	</e:Group>
 	<e:Group id="tips" width="1218" height="714" x="246" y="208" anchorOffsetX="0" anchorOffsetY="0" visible="false">
-		<e:Rect width="1180" height="703.21" y="0.79" fillColor="0xa0a8ff" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0"/>
+		<e:Image source="lsyk_wf_bg_png" y="-6.5" scale9Grid="40,40,2,10" fillMode="scale" anchorOffsetX="0" width="1252" horizontalCenter="4"/>
 		<e:Image source="title_text_wf_png" y="-78" horizontalCenter="0"/>
-		<e:Scroller width="1204" height="692" y="9.37" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="5" x="32" scaleX="1" scaleY="1">
+		<e:Scroller width="1204" height="675.33" y="9.37" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="5" x="32" scaleX="1" scaleY="1">
 			<e:Group anchorOffsetX="0" width="244" anchorOffsetY="0" height="712" x="0" y="-10">
 			<e:Label text="生死百家乐游戏说明" x="45" y="3.04" textColor="0x5e44e6" size="38"/>
-			<e:Image source="lsyk_wf_bg_png" x="0" y="-3" width="1200" scale9Grid="89,89,572,572" visible="false"/>
 			<e:Label id="tipsContent" text="" x="45" y="60.51" anchorOffsetX="0" width="1126" anchorOffsetY="0" textColor="0x302a75" size="34" lineSpacing="34"/>
 			</e:Group>
 		</e:Scroller>
 	</e:Group>
 	<e:Group id="sourceCodeG" width="1208" height="702" y="213" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0" visible="false">
-		<e:Rect width="1212" height="709.21" y="-5.21" fillColor="0xA0A8FF" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0"/>
-		<e:Scroller width="1220" height="690" y="3" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0">
+		<e:Image source="lsyk_wf_bg_png" y="-9.42" scale9Grid="40,40,2,10" fillMode="scale" anchorOffsetX="0" width="1252" horizontalCenter="0"/>
+		<e:Scroller width="1189.7" height="667.27" y="12.09" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0">
 			<e:Group anchorOffsetX="0" width="330">
-				<e:Label id="sourceCodeLabel" text="" x="51" y="28" anchorOffsetX="0" width="1126" anchorOffsetY="0" textColor="0x302A75" size="34" lineSpacing="34" scaleX="1" scaleY="1"/>
+				<e:Label id="sourceCodeLabel" text="" y="8.24" anchorOffsetX="0" width="1180" anchorOffsetY="0" textColor="0x302A75" size="34" lineSpacing="34" scaleX="1" scaleY="1" horizontalCenter="0.14999999999997726"/>
 			</e:Group>
 		</e:Scroller>
 	</e:Group>
 	<e:Group id="gameInfo" width="1218" height="714" x="256" y="218" anchorOffsetX="0" anchorOffsetY="0" visible="false">
-		<e:Rect width="1222" height="703.21" y="-5.21" fillColor="0xA0A8FF" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="-8"/>
+		<e:Image source="lsyk_wf_bg_png" y="-15.62" scale9Grid="40,40,2,10" fillMode="scale" anchorOffsetX="0" width="1252" horizontalCenter="-6"/>
 		<e:Label text="应用名：" anchorOffsetX="0" width="232" anchorOffsetY="0" textColor="0x302A75" size="34" lineSpacing="34" height="70" left="47" verticalCenter="-262" verticalAlign="middle" textAlign="left"/>
 		<e:Label id="gameName" text="" anchorOffsetX="0" width="826" anchorOffsetY="0" textColor="0x302A75" size="34" lineSpacing="34" height="70" verticalCenter="-262" left="313" verticalAlign="middle" textAlign="left"/>
 		<e:Label id="creator" text="" anchorOffsetX="0" width="826" anchorOffsetY="0" textColor="0x302A75" size="34" lineSpacing="34" height="70" verticalCenter="-174" left="313" verticalAlign="middle" textAlign="left"/>

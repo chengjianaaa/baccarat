@@ -82,10 +82,10 @@ var Main = (function (_super) {
             // custom lifecycle plugin
         });
         egret.lifecycle.onPause = function () {
-            egret.ticker.pause();
+            // egret.ticker.pause();
         };
         egret.lifecycle.onResume = function () {
-            egret.ticker.resume();
+            // egret.ticker.resume();
         };
         //inject the custom material parser
         //注入自定义的素材解析器
