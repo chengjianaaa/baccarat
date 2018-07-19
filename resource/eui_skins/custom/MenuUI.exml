@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="MenuUI" width="480" height="129" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="goHome" source="icon_home_png" x="9" y="26"/>
+	<e:Image id="tips" source="icon_help_png" x="249" y="26"/>
+	<e:Image id="gameInfo" source="icon_zjxx_png" x="129" y="26"/>
+	<e:Image id="sourceCode" source="icon_ym_png" x="369" y="26"/>
+</e:Skin>

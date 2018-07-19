@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="AlertUI" width="1716" height="1080" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Rect left="0" right="0" top="0" bottom="0" fillAlpha="0.54"/>
+	<e:Image source="small_pop_ups_png" horizontalCenter="0" verticalCenter="0"/>
+	<e:Image id="btn" source="btn_sure_png" y="570.79" horizontalCenter="-0.5"/>
+	<e:Label id="label" text="null" y="464.79" anchorOffsetX="0" width="650" anchorOffsetY="0" size="36" horizontalCenter="0" textAlign="center"/>
+</e:Skin>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="infoPanal" width="1716" height="1080" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Rect left="0" right="0" top="0" bottom="0" fillAlpha="0.56"/>
+	<e:Image source="pop_ups_png" verticalCenter="0" horizontalCenter="0"/>
+	<e:Group id="history" anchorOffsetX="0" left="0" right="0" top="0" bottom="0" visible="false">
+		<e:Image source="title_text_dzld_png" y="132.24" horizontalCenter="0" x="725" scaleX="1" scaleY="1"/>
+		<e:Image source="icon_png" x="240.92" y="206.24"/>
+		<e:Image source="win_ping_png" x="786.84" y="211.5"/>
+		<e:Image source="win_zhuang_png" x="369.7" y="211.5"/>
+		<e:Image source="win_xian_png" x="1071.1" y="211.5"/>
+		<e:Image source="bg_png" x="232" y="318.24"/>
+		<e:Label id="bankerRate" text="0%" x="643" y="241.24" size="40" textColor="0x372e99" width="117" height="42" verticalAlign="middle" textAlign="center"/>
+		<e:Label id="drawRate" text="0%" x="919" y="241.24" size="40" textColor="0x372E99" width="117" height="42" verticalAlign="middle" textAlign="center"/>
+		<e:Label id="playerRate" text="0%" x="1341" y="241.24" size="40" textColor="0x372E99" width="117" height="42" verticalAlign="middle" textAlign="center" anchorOffsetX="0"/>
+		<e:Label id="banker" text="0" x="1177" y="417.69" textColor="0x302a75" size="38" width="50" height="40" verticalAlign="middle" textAlign="center"/>
+		<e:Label id="player" text="0" x="1352.34" y="419.02" textColor="0x302A75" size="38" width="50" height="40" verticalAlign="middle" textAlign="center"/>
+		<e:Label id="bankerD" text="0" x="1177" y="705.72" textColor="0x302A75" size="38" width="50" height="40" verticalAlign="middle" textAlign="center"/>
+		<e:Label id="draw" text="0" x="1177" y="555" textColor="0x302A75" size="38" width="50" height="40" verticalAlign="middle" textAlign="center"/>
+		<e:Label id="pointDraw" text="0" x="1352.26" y="555" textColor="0x302A75" size="38" width="50" height="40" verticalAlign="middle" textAlign="center"/>
+		<e:Label id="bankerB" text="0" x="1177" y="851.24" textColor="0x302A75" size="38" width="50" height="40" verticalAlign="middle" textAlign="center"/>
+		<e:Label id="playerB" text="0" x="1352.34" y="851.24" textColor="0x302A75" size="38" width="50" height="40" verticalAlign="middle" textAlign="center"/>
+		<e:Label id="playD" text="0" x="1352.34" y="705.72" textColor="0x302A75" size="38" width="50" height="40" verticalAlign="middle" textAlign="center"/>
+		<e:Group id="drawArea" width="837.84" height="579.37" x="248.03" y="330.29" anchorOffsetX="0" anchorOffsetY="0">
+		</e:Group>
+		<e:Image source="xz_dh_png" x="1317.02" y="503.5"/>
+		<e:Image source="xz_h_png" x="1143.35" y="503.5"/>
+		<e:Image source="xz_x_png" x="1317.02" y="363"/>
+		<e:Image source="xz_z_png" x="1143.35" y="363"/>
+		<e:Image source="xz_xd_png" x="1317.02" y="649"/>
+		<e:Image source="xz_zd_png" x="1143.35" y="649"/>
+		<e:Image source="xz_ztw_png" x="1143.35" y="791.5"/>
+		<e:Image source="xz_xtw_png" x="1317.02" y="792.5"/>
+	</e:Group>
+	<e:Group id="localHistory" left="0" right="0" top="0" bottom="0" visible="false">
+		<e:Image source="lsyk_bg_png" y="203.24" horizontalCenter="0"/>
+		<e:Image source="title_text_lsyk_png" y="130" horizontalCenter="0"/>
+		<e:Scroller width="1190" height="603.33" y="297" anchorOffsetX="0" anchorOffsetY="0" scrollPolicyH="off" scrollPolicyV="on" horizontalCenter="0">
+			<e:Group id="localHistoryG" anchorOffsetX="0" width="1180" x="-14" y="0" anchorOffsetY="0" height="609.33">
+			</e:Group>
+		</e:Scroller>
+	</e:Group>
+	<e:Group id="settle" left="0" right="0" top="0" bottom="0" visible="false">
+		<e:Image source="tzjs_bg_png" y="203.24" horizontalCenter="0"/>
+		<e:Image source="title_text_tzjs_png" y="131.24" horizontalCenter="0"/>
+		<e:Image id="playerR1" source="poker_back_png" x="456.05" y="237.47" width="100" height="125"/>
+		<e:Image id="playerR2" source="poker_back_png" x="554.72" y="237.47" width="100" height="125"/>
+		<e:Image id="playerR3" source="poker_back_png" x="651.33" y="237.47" width="100" height="125"/>
+		<e:Image id="bankerR1" source="poker_back_png" x="962.04" y="237.47" width="100" height="125"/>
+		<e:Image id="bankerR2" source="poker_back_png" x="1060.71" y="237.47" width="100" height="125"/>
+		<e:Image id="bankerR3" source="poker_back_png" x="1157.32" y="237.47" width="100" height="125"/>
+		<e:Image source="hjsy_png" x="312" y="439.06"/>
+		<e:Label id="totalWin" text="+0" x="535" y="433.02" anchorOffsetX="0" width="358" size="40" textColor="0x5e44e6" textAlign="left" verticalAlign="middle" height="50"/>
+		<e:Image source="xz_z_png" x="312" y="537"/>
+		<e:Image source="xz_zd_png" x="312" y="639"/>
+		<e:Image source="xz_xtw_png" x="700" y="738"/>
+		<e:Image source="xz_ztw_png" x="312" y="738"/>
+		<e:Image source="xz_h_png" x="312" y="838"/>
+		<e:Image source="xz_x_png" x="700" y="537"/>
+		<e:Image source="xz_dh_png" x="700" y="838"/>
+		<e:Image source="xz_xd_png" x="700" y="639"/>
+		<e:Label id="bankerWin" text="0" x="464" y="537" textColor="0x302a75" size="34" anchorOffsetX="0" width="103" anchorOffsetY="0" height="37" verticalAlign="middle" textAlign="center"/>
+		<e:Label id="bankerDWin" text="0" x="464" y="639" textColor="0x302A75" size="34" anchorOffsetX="0" width="103" anchorOffsetY="0" height="37" verticalAlign="middle" textAlign="center"/>
+		<e:Label id="bankerBWin" text="0" x="464" y="738" textColor="0x302A75" size="34" anchorOffsetX="0" width="103" anchorOffsetY="0" height="37" verticalAlign="middle" textAlign="center"/>
+		<e:Label id="drawWin" text="0" x="464" y="838" textColor="0x302A75" size="34" anchorOffsetX="0" width="103" anchorOffsetY="0" height="37" verticalAlign="middle" textAlign="center"/>
+		<e:Label id="playerWin" text="0" x="846" y="537" textColor="0x302A75" size="34" anchorOffsetX="0" width="103" anchorOffsetY="0" height="37" verticalAlign="middle" textAlign="center"/>
+		<e:Label id="playerDWin" text="0" x="846" y="639" textColor="0x302A75" size="34" anchorOffsetX="0" width="103" anchorOffsetY="0" height="37" verticalAlign="middle" textAlign="center"/>
+		<e:Label id="playBWin" text="0" x="846" y="738" textColor="0x302A75" size="34" anchorOffsetX="0" width="103" anchorOffsetY="0" height="37" verticalAlign="middle" textAlign="center"/>
+		<e:Label id="pointDrawWin" text="0" x="846" y="838" textColor="0x302A75" size="34" anchorOffsetX="0" width="103" anchorOffsetY="0" height="37" verticalAlign="middle" textAlign="center"/>
+	</e:Group>
+	<e:Group id="tips" width="1218" height="714" x="246" y="208" anchorOffsetX="0" anchorOffsetY="0" visible="false">
+		<e:Rect width="1180" height="703.21" y="0.79" fillColor="0xa0a8ff" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0"/>
+		<e:Image source="title_text_wf_png" y="-78" horizontalCenter="0"/>
+		<e:Scroller width="1204" height="692" y="9.37" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="5" x="32" scaleX="1" scaleY="1">
+			<e:Group anchorOffsetX="0" width="244" anchorOffsetY="0" height="712" x="0" y="-10">
+			<e:Label text="生死百家乐游戏说明" x="45" y="3.04" textColor="0x5e44e6" size="38"/>
+			<e:Image source="lsyk_wf_bg_png" x="0" y="-3" width="1200" scale9Grid="89,89,572,572" visible="false"/>
+			<e:Label id="tipsContent" text="" x="45" y="60.51" anchorOffsetX="0" width="1126" anchorOffsetY="0" textColor="0x302a75" size="34" lineSpacing="34"/>
+			</e:Group>
+		</e:Scroller>
+	</e:Group>
+	<e:Group id="sourceCodeG" width="1208" height="702" y="213" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0" visible="false">
+		<e:Rect width="1212" height="709.21" y="-5.21" fillColor="0xA0A8FF" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0"/>
+		<e:Scroller width="1220" height="690" y="3" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0">
+			<e:Group anchorOffsetX="0" width="330">
+				<e:Label id="sourceCodeLabel" text="" x="51" y="28" anchorOffsetX="0" width="1126" anchorOffsetY="0" textColor="0x302A75" size="34" lineSpacing="34" scaleX="1" scaleY="1"/>
+			</e:Group>
+		</e:Scroller>
+	</e:Group>
+	<e:Group id="gameInfo" width="1218" height="714" x="256" y="218" anchorOffsetX="0" anchorOffsetY="0" visible="false">
+		<e:Rect width="1222" height="703.21" y="-5.21" fillColor="0xA0A8FF" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="-8"/>
+		<e:Label text="应用名：" anchorOffsetX="0" width="232" anchorOffsetY="0" textColor="0x302A75" size="34" lineSpacing="34" height="70" left="47" verticalCenter="-262" verticalAlign="middle" textAlign="left"/>
+		<e:Label id="gameName" text="" anchorOffsetX="0" width="826" anchorOffsetY="0" textColor="0x302A75" size="34" lineSpacing="34" height="70" verticalCenter="-262" left="313" verticalAlign="middle" textAlign="left"/>
+		<e:Label id="creator" text="" anchorOffsetX="0" width="826" anchorOffsetY="0" textColor="0x302A75" size="34" lineSpacing="34" height="70" verticalCenter="-174" left="313" verticalAlign="middle" textAlign="left"/>
+		<e:Label id="contractAddr" text="" anchorOffsetX="0" width="826" anchorOffsetY="0" textColor="0x302A75" size="34" lineSpacing="34" height="70" verticalCenter="-76" left="313" verticalAlign="middle" textAlign="left"/>
+		<e:Label id="createTime" text="" anchorOffsetX="0" width="826" anchorOffsetY="0" textColor="0x302A75" size="34" lineSpacing="34" height="70" verticalCenter="22" left="313" verticalAlign="middle" textAlign="left"/>
+		<e:Label id="balance" text="" anchorOffsetX="0" width="826" anchorOffsetY="0" textColor="0x302A75" size="34" lineSpacing="34" height="70" verticalCenter="122" left="313" verticalAlign="middle" textAlign="left"/>
+		<e:Label id="historyCoin" text="" anchorOffsetX="0" width="826" anchorOffsetY="0" textColor="0x302A75" size="34" lineSpacing="34" height="70" verticalCenter="216" left="313" verticalAlign="middle" textAlign="left"/>
+		<e:Label text="创建人地址：" anchorOffsetX="0" width="232" anchorOffsetY="0" textColor="0x302A75" size="34" lineSpacing="34" height="70" verticalCenter="-174" left="47" verticalAlign="middle" textAlign="left"/>
+		<e:Label text="应用地址：" anchorOffsetX="0" width="232" anchorOffsetY="0" textColor="0x302A75" size="34" lineSpacing="34" height="70" verticalCenter="-76" left="47" verticalAlign="middle" textAlign="left"/>
+		<e:Label text="创建时间：" anchorOffsetX="0" width="232" anchorOffsetY="0" textColor="0x302A75" size="34" lineSpacing="34" height="70" verticalCenter="22" left="47" verticalAlign="middle" textAlign="left"/>
+		<e:Label text="奖池余额：" anchorOffsetX="0" width="232" anchorOffsetY="0" textColor="0x302A75" size="34" lineSpacing="34" height="70" verticalCenter="122" left="47" verticalAlign="middle" textAlign="left"/>
+		<e:Label text="下注总金额：" anchorOffsetX="0" width="232" anchorOffsetY="0" textColor="0x302A75" size="34" lineSpacing="34" height="70" verticalCenter="216" left="47" verticalAlign="middle" textAlign="left"/>
+	</e:Group>
+	<e:Image id="close" source="close_png" x="1462.18" y="110.24"/>
+</e:Skin>

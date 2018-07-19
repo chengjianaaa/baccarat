@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="TableUI" width="1716" height="1080" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:tween="egret.tween.*">
+	<w:Declarations>
+		<tween:TweenGroup id="pokerAnimal">
+			<tween:TweenItem target="{playerPokerA1}">
+				<tween:To duration="350" ease="quadInOut">
+					<tween:props>
+						<e:Object x="{859}" y="{555}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="150">
+					<tween:props>
+						<e:Object x="{859}" y="{555}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="400">
+					<tween:props>
+						<e:Object x="{404}" y="{555}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{playerPokerA2}">
+				<tween:Wait duration="1800"/>
+				<tween:Set/>
+				<tween:To duration="350">
+					<tween:props>
+						<e:Object y="{555}" x="{859}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="150">
+					<tween:props>
+						<e:Object y="{555}" x="{859}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="400">
+					<tween:props>
+						<e:Object x="{500}" y="{555}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{bankerPokerA1}">
+				<tween:Wait duration="900"/>
+				<tween:Set/>
+				<tween:To duration="350">
+					<tween:props>
+						<e:Object x="{859}" y="{555}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="150">
+					<tween:props>
+						<e:Object x="{859}" y="{555}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="400">
+					<tween:props>
+						<e:Object y="{555}" x="{1309}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{bankerPokerA2}">
+				<tween:Wait duration="2700"/>
+				<tween:Set/>
+				<tween:To duration="350">
+					<tween:props>
+						<e:Object x="{859}" y="{555}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="150">
+					<tween:props>
+						<e:Object x="{859}" y="{555}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="400">
+					<tween:props>
+						<e:Object y="{555}" x="{1213}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+		<tween:TweenGroup id="fanalTurnP3">
+			<tween:TweenItem target="{playerPokerA3}">
+				<tween:Set/>
+				<tween:To duration="350">
+					<tween:props>
+						<e:Object y="{555}" x="{859}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="150">
+					<tween:props>
+						<e:Object y="{555}" x="{859}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="400">
+					<tween:props>
+						<e:Object y="{555}" x="{596}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+		<tween:TweenGroup id="fanalTurnB3">
+			<tween:TweenItem target="{bankerPokerA3}">
+				<tween:Set/>
+				<tween:To duration="350">
+					<tween:props>
+						<e:Object x="{859}" y="{555}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="150">
+					<tween:props>
+						<e:Object y="{555}" x="{859}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="400">
+					<tween:props>
+						<e:Object y="{555}" x="{1117}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+	</w:Declarations>
+	<e:Image source="table_png" left="0" right="0" top="0"/>
+	<e:Group id="pokerAnimalGroup" left="0" right="0" top="0" bottom="0" visible="false">
+		<e:Image id="playerPokerA1" source="poker_back_png" y="350" scaleX="1" scaleY="1" anchorOffsetX="55" anchorOffsetY="69" x="859"/>
+		<e:Image id="playerPokerA2" source="poker_back_png" x="859" y="350" scaleX="1" scaleY="1" anchorOffsetX="55" anchorOffsetY="69"/>
+		<e:Image id="playerPokerA3" source="poker_back_png" x="859" y="350" scaleX="1" scaleY="1" anchorOffsetX="55" anchorOffsetY="69"/>
+		<e:Image id="bankerPokerA1" source="poker_back_png" x="859" y="350" scaleX="1" scaleY="1" anchorOffsetX="55" anchorOffsetY="69"/>
+		<e:Image id="bankerPokerA2" source="poker_back_png" x="859" y="350" scaleX="1" scaleY="1" anchorOffsetX="55" anchorOffsetY="69"/>
+		<e:Image id="bankerPokerA3" source="poker_back_png" x="859" y="350" scaleX="1" scaleY="1" anchorOffsetX="55" anchorOffsetY="69"/>
+		<e:Label id="playPoint" text="0" x="404.46" y="620" textColor="0xeabf4e" width="100" verticalAlign="middle" textAlign="center"/>
+		<e:Label id="bankerPoint" text="0" x="1211.5" y="620" textColor="0xeabf4e" width="100" verticalAlign="middle" textAlign="center"/>
+		<e:Image source="poker_back_png" x="859" y="350" anchorOffsetX="55" anchorOffsetY="69"/>
+	</e:Group>
+	<e:Image id="historyBtn" source="btn_dzld_png" x="806" y="33"/>
+	<e:Image id="localHistoryBtn" source="btn_lsyk_png" x="576" y="33"/>
+	<e:Image source="jc_fof_bg_png" x="1110" y="40"/>
+	<e:Image source="jc_fof_bg_png" x="1413" y="40"/>
+	<e:Label id="pool" text="0" x="1153" y="44" anchorOffsetX="0" width="170" anchorOffsetY="0" height="57" verticalAlign="middle" textAlign="center" fontFamily="SourceHanSansCN-Regular" size="35" textColor="0x8FA6CF"/>
+	<e:Image source="jc_png" x="1066.5" y="33"/>
+	<e:Image source="fof_png" x="1369.5" y="33"/>
+	<e:Label id="myBalance" text="0" x="1456.5" y="44" anchorOffsetX="0" width="170" anchorOffsetY="0" height="57" verticalAlign="middle" textAlign="center" fontFamily="SourceHanSansCN-Regular" size="35" textColor="0x8fa6cf"/>
+	<e:Image source="clock_png" x="732" y="168"/>
+	<e:Label id="tipsLabel" text="下注时间" x="869" y="211" textColor="0xfdf2b7" size="35"/>
+	<e:Label id="timeNum" text="0S" x="761.5" y="212" size="33" verticalAlign="middle" textAlign="center" anchorOffsetX="0" width="59" height="33"/>
+	<e:Image id="chip1" source="chip1_png" x="279" y="795"/>
+	<e:Image id="chip2" source="chip2_png" x="584.66" y="795"/>
+	<e:Image id="chip3" source="chip3_png" x="896.84" y="795"/>
+	<e:Image id="chip4" source="chip4_png" x="1212" y="795"/>
+	<e:Image id="chip1Active" source="chip1_xz_png" x="265.5" y="766.5" visible="false"/>
+	<e:Image id="chip2Active" source="chip2_xz_png" x="571.66" y="766.5" visible="false"/>
+	<e:Image id="chip3Active" source="chip3_xz_png" x="883.84" y="766.5" visible="false"/>
+	<e:Image id="chip4Active" source="chip4_xz_png" x="1199" y="766.5" visible="false"/>
+	<e:Label id="chip1Label" text="1" x="288.5" y="790.5" textColor="0xfefefe" size="74" fontFamily="FlamaCondensed-Bold" anchorOffsetX="0" width="219" anchorOffsetY="0" height="219" textAlign="center" bold="true" verticalAlign="middle" name="chip1Label"/>
+	<e:Label id="chip2Label" text="1" x="594.16" y="790.5" textColor="0xFEFEFE" size="74" fontFamily="FlamaCondensed-Bold" anchorOffsetX="0" width="219" anchorOffsetY="0" height="219" verticalAlign="middle" textAlign="center" bold="true" name="chip2Label"/>
+	<e:Label id="chip3Label" text="1" x="906.34" y="790.5" textColor="0xFEFEFE" size="74" fontFamily="FlamaCondensed-Bold" anchorOffsetX="0" width="219" anchorOffsetY="0" height="219" verticalAlign="middle" textAlign="center" bold="true" name="chip3Label"/>
+	<e:Label id="chip4Label" text="1" x="1221.5" y="790.5" textColor="0xFEFEFE" size="74" fontFamily="FlamaCondensed-Bold" anchorOffsetX="0" width="219" anchorOffsetY="0" height="219" verticalAlign="middle" textAlign="center" bold="true" name="chip4Label"/>
+	<e:Rect id="playerDBet" width="413.94" height="116.97" x="372.39" y="276.91" anchorOffsetX="0" anchorOffsetY="0" fillAlpha="0" fillColor="0xffffff" name="playerDBet"/>
+	<e:Rect id="bankerDBet" width="439.7" height="116.97" x="913.24" y="276.91" anchorOffsetX="0" anchorOffsetY="0" fillAlpha="0" fillColor="0xFFFFFF" name="bankerDBet"/>
+	<e:Rect id="playerBet" width="362.43" height="148.79" x="194.96" y="439.94" anchorOffsetX="0" anchorOffsetY="0" fillAlpha="0" fillColor="0xFFFFFF" name="playerBet"/>
+	<e:Rect id="bankerBet" width="332.13" height="148.79" x="1192.93" y="439.94" anchorOffsetX="0" anchorOffsetY="0" fillAlpha="0" fillColor="0xFFFFFF" name="bankerBet"/>
+	<e:Rect id="drawBet" width="332.13" height="77.58" x="683.93" y="426.15" anchorOffsetX="0" anchorOffsetY="0" fillAlpha="0" fillColor="0xFFFFFF" name="drawBet"/>
+	<e:Rect id="pointDrawBet" width="332.13" height="77.58" x="684.47" y="523.46" anchorOffsetX="0" anchorOffsetY="0" fillAlpha="0" fillColor="0xFFFFFF" name="pointDrawBet"/>
+	<e:Rect id="playerBBet" width="353.34" height="109.4" x="397.5" y="633.46" anchorOffsetX="0" anchorOffsetY="0" fillAlpha="0" fillColor="0xFFFFFF" name="playerBBet"/>
+	<e:Rect id="bankerBBet" width="353.34" height="109.4" x="968.54" y="634.98" anchorOffsetX="0" anchorOffsetY="0" fillAlpha="0" fillColor="0xFFFFFF" name="bankerBBet"/>
+	<e:Label id="addPokerTxt" text="txt" y="345" anchorOffsetX="0" width="567.94" anchorOffsetY="0" height="64.85" verticalAlign="middle" textAlign="center" horizontalCenter="0" textColor="0x161513" visible="false"/>
+</e:Skin>

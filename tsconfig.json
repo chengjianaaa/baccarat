@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "outDir": "bin-debug",
+        "experimentalDecorators": true,
+        "lib": [
+            "es5",
+            "dom",
+            "es2015.promise"
+        ],
+        "types": []
+    },
+    "include": [
+        "src",
+        "libs"
+    ],
+    "exclude": [
+        "libs/web3.min.js",
+        "libs/ethers.min.js"
+    ]
+}

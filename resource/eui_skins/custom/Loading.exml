@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="Loading" width="1716" height="1080" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:tween="egret.tween.*" >
+	<w:Declarations>
+		<tween:TweenGroup id="loop">
+			<tween:TweenItem target="{light}">
+				<tween:Set>
+					<tween:props>
+						<e:Object rotation="{90}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="1600">
+					<tween:props>
+						<e:Object rotation="{450}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+	</w:Declarations>
+	<e:Rect id="rect" anchorOffsetX="0" anchorOffsetY="0" fillAlpha="0.7" fillColor="0x000000" left="0" right="0" top="0" bottom="0"/>
+	<e:Label id="label" text="加载中···" anchorOffsetX="0" width="204.3" anchorOffsetY="0" height="75.45" rotation="89.68" verticalCenter="0" horizontalCenter="0" verticalAlign="middle" textAlign="center" visible="false"/>
+	<e:Image source="loading_png" rotation="0" horizontalCenter="0" verticalCenter="0"/>
+	<e:Image id="light" source="loading_light_png" rotation="0" verticalCenter="-6" horizontalCenter="0"/>
+</e:Skin>
