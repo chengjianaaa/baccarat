@@ -47,35 +47,45 @@ var MenuTs = (function (_super) {
         $PublicData.panel.sourceCodeG.visible = true;
         var request = new egret.HttpRequest();
         request.responseType = egret.HttpResponseType.TEXT;
-        request.open($PublicData.getContract, egret.HttpMethod.POST);
+        request.open('contract/Baccarat.sol', egret.HttpMethod.GET);
         request.setRequestHeader("Content-Type", "application/json");
-        request.send(JSON.stringify({
-            "addr": $PublicData.ContractAddress,
-            "pageSize": 200,
-            "pageNum": 1,
-        }));
+        request.send();
         request.addEventListener(egret.Event.COMPLETE, function (event) {
             var request = event.currentTarget;
-            var data = JSON.parse(request.response);
-            if (data.result) {
-                if (data.result.length > 0 && data.result[0].txHash) {
-                    $PublicData.Web3.eth.getTransaction(data.result[0].txHash).then(function (data) {
-                        $PublicData.panel.sourceCodeLabel.text = $PublicData.Web3.utils.hexToUtf8(data.datasourcecode);
-                    });
-                }
-                else {
-                    $PublicData.panel.sourceCodeLabel.text = "未查询到相关信息";
-                }
-            }
+            $PublicData.panel.sourceCodeLabel.text = request.response;
         }, this);
-        request.addEventListener(egret.IOErrorEvent.IO_ERROR, function (err) {
-            console.log("error:" + String(err));
-        }, this);
+        // let request = new egret.HttpRequest();
+        // request.responseType = egret.HttpResponseType.TEXT;
+        // request.open($PublicData.getContract, egret.HttpMethod.POST);
+        // request.setRequestHeader("Content-Type", "application/json");
+        // request.send(JSON.stringify({
+        //     "addr": $PublicData.ContractAddress,
+        //     "pageSize": 200,
+        //     "pageNum": 1,
+        // }));
+        // request.addEventListener(egret.Event.COMPLETE, (event) => {
+        //     let request = <egret.HttpRequest>event.currentTarget;
+        //     let data = JSON.parse(request.response);
+        //     if (data.result) {
+        //         console.log(data.result);
+        //         if (data.result.length > 0 && data.result[0].txHash) {
+        //             $PublicData.Web3.eth.getTransaction(data.result[0].txHash).then((data) => {
+        //                 $PublicData.panel.sourceCodeLabel.text = $PublicData.Web3.utils.hexToUtf8(data.datasourcecode)
+        //             })
+        //         } else {
+        //             $PublicData.panel.sourceCodeLabel.text = "未查询到相关信息";
+        //         }
+        //     }
+        // }, this);
+        // request.addEventListener(egret.IOErrorEvent.IO_ERROR, (err) => {
+        //     console.log("error:" + String(err));
+        // }, this);
     };
     /**
      * 显示游戏信息
      */
     MenuTs.prototype.showGameInfo = function () {
+        var _this = this;
         $PublicData.panel.settle.visible = false;
         $PublicData.panel.history.visible = false;
         $PublicData.panel.localHistory.visible = false;
@@ -90,9 +100,26 @@ var MenuTs = (function (_super) {
         $PublicData.ContractInstance.methods.getPublicData().call().then(function (data) {
             $PublicData.panel.gameName.text = data[0];
             $PublicData.panel.creator.text = data[2];
-            $PublicData.panel.createTime.text = data[3];
+            $PublicData.panel.createTime.text = _this.timestampToTime(data[3] * 1000);
             $PublicData.panel.historyCoin.text = $PublicData.Web3.utils.fromWei(data[4], 'ether');
         });
+    };
+    /*
+转换时间
+*/
+    MenuTs.prototype.timestampToTime = function (timestamp) {
+        var date = new Date(timestamp * 1); //时间戳为10位需*1000，时间戳为13位的话不需乘1000
+        var Y = date.getFullYear() + '.';
+        var M = this.fillZero(date.getMonth() + 1) + '.';
+        var D = this.fillZero(date.getDate()) + ' ';
+        var h = this.fillZero(date.getHours()) + ':';
+        var m = this.fillZero(date.getMinutes()) + ':';
+        var s = this.fillZero(date.getSeconds());
+        return Y + M + D + h + m + s;
+    };
+    MenuTs.prototype.fillZero = function (time) {
+        time = time < 10 ? "0" + time : time;
+        return time;
     };
     return MenuTs;
 }(eui.Component));

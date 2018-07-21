@@ -45,6 +45,7 @@ class Table extends eui.Component {
     public playerBBet: eui.Rect;
     public bankerBBet: eui.Rect;
     public addPokerTxt: eui.Label;
+    public tip_bg:eui.Image;
 
     private choosedBetCoin: String = "1"; // 选中下注的金额
     private choosedBetArea: String; // 选中下注的区域
@@ -145,6 +146,7 @@ class Table extends eui.Component {
             if (betPokerNum[0] > 2) {// “闲家”必须增牌
                 this.addPokerTxt.text = `闲${firstTurnPlayer}点，庄${firstTurnBanker}点，闲家继续拿牌`;
                 this.addPokerTxt.visible = true;
+                this.tip_bg.visible=true;
                 setTimeout(() => {
                     this.fanalTurnP3.stop();
                     this.fanalTurnP3.play();
@@ -156,6 +158,7 @@ class Table extends eui.Component {
                 if (betPokerNum[1] > 2) {
                     this.addPokerTxt.text = `闲${firstTurnPlayer}点，庄${firstTurnBanker}点，庄家继续拿牌`;
                     this.addPokerTxt.visible = true;
+                    this.tip_bg.visible=true;
                     this.fanalTurnB3.stop();
                     this.fanalTurnB3.play();
                     this.bankerPokerA3.visible = true;
@@ -163,6 +166,7 @@ class Table extends eui.Component {
                 } else {   // 闲不增庄不增
                     this.addPokerTxt.text = `闲${contractRes[0]}点，庄${contractRes[1]}点，${fanal}`;
                     this.addPokerTxt.visible = true;
+                    this.tip_bg.visible=true;
                     this.bankerAddPoker();
                 }
             }
@@ -207,7 +211,7 @@ class Table extends eui.Component {
             this.bankerPokerA3.source = "resource/assets/baccarat/poker/" + bankerPokersArr[2] + '_' + figure2[2] + '.png';
         }).to({scaleX: 1}, 500).call(() => {
             this.bankerPoint.text = contractRes[1] + '点';
-            this.addPokerTxt.text = `庄家${contractRes[0]}点，闲家${contractRes[1]}点，${fanal}。`;
+            this.addPokerTxt.text = `闲家${contractRes[0]}点，庄家${contractRes[1]}点，${fanal}。`;
             this.bankerAddPoker();
         });
     };
@@ -249,7 +253,6 @@ class Table extends eui.Component {
                  * 结算完获取服务时间和更新余额
                  */
                 if (event.returnValues) {
-                    console.log(event.returnValues);
                     this.tipsLabel.text = "结算时间";
                     this.timeNum.text = "--";
                     this.serverTime = 60;
@@ -271,7 +274,7 @@ class Table extends eui.Component {
      */
     private settlement(poker) {
         this.removeSmallCoin();
-        console.log(poker);
+        // console.log(poker);
         let playerPokers = poker[0]; // 闲家出的牌
         let bankerPokers = poker[1]; // 庄家出的牌
         let contractRes = poker[2]; // 合约中比牌结果
@@ -441,6 +444,7 @@ class Table extends eui.Component {
         $PublicData.loading.visible = false;
         $PublicData.alert.visible = false;
 
+        $PublicData.panel.visible = false;
         $PublicData.panel.settle.visible = false;
         $PublicData.panel.sourceCodeG.visible = false;
         $PublicData.panel.gameInfo.visible = false;
@@ -473,13 +477,14 @@ class Table extends eui.Component {
             this.bankerPokerA2.source = "resource/assets/baccarat/poker/poker_back.png";
             this.bankerPokerA3.source = "resource/assets/baccarat/poker/poker_back.png";
             this.pokerAnimalGroup.visible = false;
-            this.playPoint.text = '0';
-            this.bankerPoint.text = '0';
+            this.playPoint.text = null;
+            this.bankerPoint.text = null;
             this.fanalTurnP3.stop();
             this.fanalTurnB3.stop();
             this.playerPokerA3.visible = false;
             this.bankerPokerA3.visible = false;
             this.addPokerTxt.visible = false;
+            this.tip_bg.visible=false;
             setTimeout(() => {
                 $PublicData.loading.visible = false;
                 $PublicData.alert.visible = false;

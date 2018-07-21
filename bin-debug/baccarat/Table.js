@@ -101,6 +101,7 @@ var Table = (function (_super) {
             if (betPokerNum[0] > 2) {
                 _this.addPokerTxt.text = "\u95F2" + firstTurnPlayer + "\u70B9\uFF0C\u5E84" + firstTurnBanker + "\u70B9\uFF0C\u95F2\u5BB6\u7EE7\u7EED\u62FF\u724C";
                 _this.addPokerTxt.visible = true;
+                _this.tip_bg.visible = true;
                 setTimeout(function () {
                     _this.fanalTurnP3.stop();
                     _this.fanalTurnP3.play();
@@ -113,6 +114,7 @@ var Table = (function (_super) {
                 if (betPokerNum[1] > 2) {
                     _this.addPokerTxt.text = "\u95F2" + firstTurnPlayer + "\u70B9\uFF0C\u5E84" + firstTurnBanker + "\u70B9\uFF0C\u5E84\u5BB6\u7EE7\u7EED\u62FF\u724C";
                     _this.addPokerTxt.visible = true;
+                    _this.tip_bg.visible = true;
                     _this.fanalTurnB3.stop();
                     _this.fanalTurnB3.play();
                     _this.bankerPokerA3.visible = true;
@@ -121,6 +123,7 @@ var Table = (function (_super) {
                 else {
                     _this.addPokerTxt.text = "\u95F2" + contractRes[0] + "\u70B9\uFF0C\u5E84" + contractRes[1] + "\u70B9\uFF0C" + fanal;
                     _this.addPokerTxt.visible = true;
+                    _this.tip_bg.visible = true;
                     _this.bankerAddPoker();
                 }
             }
@@ -166,7 +169,7 @@ var Table = (function (_super) {
             _this.bankerPokerA3.source = "resource/assets/baccarat/poker/" + bankerPokersArr[2] + '_' + figure2[2] + '.png';
         }).to({ scaleX: 1 }, 500).call(function () {
             _this.bankerPoint.text = contractRes[1] + '点';
-            _this.addPokerTxt.text = "\u5E84\u5BB6" + contractRes[0] + "\u70B9\uFF0C\u95F2\u5BB6" + contractRes[1] + "\u70B9\uFF0C" + fanal + "\u3002";
+            _this.addPokerTxt.text = "\u95F2\u5BB6" + contractRes[0] + "\u70B9\uFF0C\u5E84\u5BB6" + contractRes[1] + "\u70B9\uFF0C" + fanal + "\u3002";
             _this.bankerAddPoker();
         });
     };
@@ -207,7 +210,6 @@ var Table = (function (_super) {
              * 结算完获取服务时间和更新余额
              */
             if (event.returnValues) {
-                console.log(event.returnValues);
                 _this.tipsLabel.text = "结算时间";
                 _this.timeNum.text = "--";
                 _this.serverTime = 60;
@@ -228,7 +230,7 @@ var Table = (function (_super) {
      */
     Table.prototype.settlement = function (poker) {
         this.removeSmallCoin();
-        console.log(poker);
+        // console.log(poker);
         var playerPokers = poker[0]; // 闲家出的牌
         var bankerPokers = poker[1]; // 庄家出的牌
         var contractRes = poker[2]; // 合约中比牌结果
@@ -393,6 +395,7 @@ var Table = (function (_super) {
         $PublicData.panel.pointDrawWin.text = resultArr[7] + "";
         $PublicData.loading.visible = false;
         $PublicData.alert.visible = false;
+        $PublicData.panel.visible = false;
         $PublicData.panel.settle.visible = false;
         $PublicData.panel.sourceCodeG.visible = false;
         $PublicData.panel.gameInfo.visible = false;
@@ -422,13 +425,14 @@ var Table = (function (_super) {
             _this.bankerPokerA2.source = "resource/assets/baccarat/poker/poker_back.png";
             _this.bankerPokerA3.source = "resource/assets/baccarat/poker/poker_back.png";
             _this.pokerAnimalGroup.visible = false;
-            _this.playPoint.text = '0';
-            _this.bankerPoint.text = '0';
+            _this.playPoint.text = null;
+            _this.bankerPoint.text = null;
             _this.fanalTurnP3.stop();
             _this.fanalTurnB3.stop();
             _this.playerPokerA3.visible = false;
             _this.bankerPokerA3.visible = false;
             _this.addPokerTxt.visible = false;
+            _this.tip_bg.visible = false;
             setTimeout(function () {
                 $PublicData.loading.visible = false;
                 $PublicData.alert.visible = false;

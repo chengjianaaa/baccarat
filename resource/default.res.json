@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,bg_jpg,description_json,gameEui_json,btn_dzld_png,btn_lsyk_png,chip_h_png,chip_s1_png,chip_s2_png,chip_s3_png,chip_s4_png,chip_s5_png,chip_s6_png,chip_s7_png,chip_s8_png,chip1_png,chip1_xz_png,chip2_png,chip2_xz_png,chip3_png,chip3_xz_png,chip4_png,chip4_xz_png,clock_png,fof_png,icon_help_png,icon_home_png,jc_png,jc_fof_bg_png,table_png,bj__png,bj_dh_png,bj_x_png,close_png,hjsy_png,icon_png,lsyk_bg_png,pop_ups_png,title_text_dzld_png,title_text_lsyk_png,title_text_tzjs_png,tzjs_bg_png,xz_dh_png,xz_h_png,xz_x_png,xz_xd_png,xz_xtw_png,xz_z_png,xz_zd_png,xz_ztw_png,yxjg_win_png,yxjg_xz_png,btn_sure_png,small_pop_ups_png,10_fangkuai_png,10_heitao_png,10_hongtao_png,10_meihua_png,11_fangkuai_png,11_heitao_png,11_hongtao_png,11_meihua_png,12_fangkuai_png,12_heitao_png,12_hongtao_png,12_meihua_png,13_fangkuai_png,13_heitao_png,13_hongtao_png,13_meihua_png,1_fangkuai_png,1_heitao_png,1_hongtao_png,1_meihua_png,2_fangkuai_png,2_heitao_png,2_hongtao_png,2_meihua_png,3_fangkuai_png,3_heitao_png,3_hongtao_png,3_meihua_png,4_fangkuai_png,4_heitao_png,4_hongtao_png,4_meihua_png,5_fangkuai_png,5_heitao_png,5_hongtao_png,5_meihua_png,6_fangkuai_png,6_heitao_png,6_hongtao_png,6_meihua_png,7_fangkuai_png,7_heitao_png,7_hongtao_png,7_meihua_png,8_fangkuai_png,8_heitao_png,8_hongtao_png,8_meihua_png,9_fangkuai_png,9_heitao_png,9_hongtao_png,9_meihua_png,poker_back_png,loading_light_png,loading_png,win_ping_png,win_zhuang_png,win_xian_png,bg_png,title_text_wf_png,lsyk_wf_bg_png,yxjg_win_hui_png,icon_ym_png,icon_zjxx_png,back_mp3,back2_mp3",
+			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,bg_jpg,description_json,gameEui_json,btn_dzld_png,btn_lsyk_png,chip_h_png,chip_s1_png,chip_s2_png,chip_s3_png,chip_s4_png,chip_s5_png,chip_s6_png,chip_s7_png,chip_s8_png,chip1_png,chip1_xz_png,chip2_png,chip2_xz_png,chip3_png,chip3_xz_png,chip4_png,chip4_xz_png,clock_png,fof_png,icon_help_png,icon_home_png,jc_png,jc_fof_bg_png,table_png,bj__png,bj_dh_png,bj_x_png,close_png,hjsy_png,icon_png,lsyk_bg_png,pop_ups_png,title_text_dzld_png,title_text_lsyk_png,title_text_tzjs_png,tzjs_bg_png,xz_dh_png,xz_h_png,xz_x_png,xz_xd_png,xz_xtw_png,xz_z_png,xz_zd_png,xz_ztw_png,yxjg_win_png,yxjg_xz_png,btn_sure_png,small_pop_ups_png,10_fangkuai_png,10_heitao_png,10_hongtao_png,10_meihua_png,11_fangkuai_png,11_heitao_png,11_hongtao_png,11_meihua_png,12_fangkuai_png,12_heitao_png,12_hongtao_png,12_meihua_png,13_fangkuai_png,13_heitao_png,13_hongtao_png,13_meihua_png,1_fangkuai_png,1_heitao_png,1_hongtao_png,1_meihua_png,2_fangkuai_png,2_heitao_png,2_hongtao_png,2_meihua_png,3_fangkuai_png,3_heitao_png,3_hongtao_png,3_meihua_png,4_fangkuai_png,4_heitao_png,4_hongtao_png,4_meihua_png,5_fangkuai_png,5_heitao_png,5_hongtao_png,5_meihua_png,6_fangkuai_png,6_heitao_png,6_hongtao_png,6_meihua_png,7_fangkuai_png,7_heitao_png,7_hongtao_png,7_meihua_png,8_fangkuai_png,8_heitao_png,8_hongtao_png,8_meihua_png,9_fangkuai_png,9_heitao_png,9_hongtao_png,9_meihua_png,poker_back_png,loading_light_png,loading_png,win_ping_png,win_zhuang_png,win_xian_png,bg_png,title_text_wf_png,lsyk_wf_bg_png,yxjg_win_hui_png,icon_ym_png,icon_zjxx_png,back_mp3,back2_mp3,yyxx_yym_png,yyxx_cjrdz_png,yyxx_cjsj_png,yyxx_jcye_png,yyxx_xzzje_png,yyxx_yydz_png,tip_bg_png",
 			"name": "preload"
 		}
 	],
@@ -715,6 +715,41 @@
 			"name": "back2_mp3",
 			"type": "sound",
 			"url": "assets/baccarat/sound/back.mp3"
+		},
+		{
+			"name": "yyxx_yym_png",
+			"type": "image",
+			"url": "assets/baccarat/level1modal/yyxx_yym.png"
+		},
+		{
+			"name": "yyxx_cjrdz_png",
+			"type": "image",
+			"url": "assets/baccarat/level1modal/yyxx_cjrdz.png"
+		},
+		{
+			"name": "yyxx_cjsj_png",
+			"type": "image",
+			"url": "assets/baccarat/level1modal/yyxx_cjsj.png"
+		},
+		{
+			"name": "yyxx_jcye_png",
+			"type": "image",
+			"url": "assets/baccarat/level1modal/yyxx_jcye.png"
+		},
+		{
+			"name": "yyxx_xzzje_png",
+			"type": "image",
+			"url": "assets/baccarat/level1modal/yyxx_xzzje.png"
+		},
+		{
+			"name": "yyxx_yydz_png",
+			"type": "image",
+			"url": "assets/baccarat/level1modal/yyxx_yydz.png"
+		},
+		{
+			"name": "tip_bg_png",
+			"type": "image",
+			"url": "assets/baccarat/home/tip_bg.png"
 		}
 	]
 }

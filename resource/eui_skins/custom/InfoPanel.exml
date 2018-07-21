@@ -87,18 +87,18 @@
 	</e:Group>
 	<e:Group id="gameInfo" width="1218" height="714" x="256" y="218" anchorOffsetX="0" anchorOffsetY="0" visible="false">
 		<e:Image source="lsyk_wf_bg_png" y="-15.62" scale9Grid="40,40,2,10" fillMode="scale" anchorOffsetX="0" width="1252" horizontalCenter="-6"/>
-		<e:Label text="应用名：" anchorOffsetX="0" width="232" anchorOffsetY="0" textColor="0x302A75" size="34" lineSpacing="34" height="70" left="47" verticalCenter="-262" verticalAlign="middle" textAlign="left"/>
 		<e:Label id="gameName" text="" anchorOffsetX="0" width="826" anchorOffsetY="0" textColor="0x302A75" size="34" lineSpacing="34" height="70" verticalCenter="-262" left="313" verticalAlign="middle" textAlign="left"/>
-		<e:Label id="creator" text="" anchorOffsetX="0" width="826" anchorOffsetY="0" textColor="0x302A75" size="34" lineSpacing="34" height="70" verticalCenter="-174" left="313" verticalAlign="middle" textAlign="left"/>
-		<e:Label id="contractAddr" text="" anchorOffsetX="0" width="826" anchorOffsetY="0" textColor="0x302A75" size="34" lineSpacing="34" height="70" verticalCenter="-76" left="313" verticalAlign="middle" textAlign="left"/>
+		<e:Label id="creator" text="" anchorOffsetX="0" width="874" anchorOffsetY="0" textColor="0x302A75" size="34" lineSpacing="34" height="70" verticalCenter="-174" left="313" verticalAlign="middle" textAlign="left"/>
+		<e:Label id="contractAddr" text="" anchorOffsetX="0" width="876" anchorOffsetY="0" textColor="0x302A75" size="34" lineSpacing="34" height="70" verticalCenter="-76" left="313" verticalAlign="middle" textAlign="left"/>
 		<e:Label id="createTime" text="" anchorOffsetX="0" width="826" anchorOffsetY="0" textColor="0x302A75" size="34" lineSpacing="34" height="70" verticalCenter="22" left="313" verticalAlign="middle" textAlign="left"/>
 		<e:Label id="balance" text="" anchorOffsetX="0" width="826" anchorOffsetY="0" textColor="0x302A75" size="34" lineSpacing="34" height="70" verticalCenter="122" left="313" verticalAlign="middle" textAlign="left"/>
 		<e:Label id="historyCoin" text="" anchorOffsetX="0" width="826" anchorOffsetY="0" textColor="0x302A75" size="34" lineSpacing="34" height="70" verticalCenter="216" left="313" verticalAlign="middle" textAlign="left"/>
-		<e:Label text="创建人地址：" anchorOffsetX="0" width="232" anchorOffsetY="0" textColor="0x302A75" size="34" lineSpacing="34" height="70" verticalCenter="-174" left="47" verticalAlign="middle" textAlign="left"/>
-		<e:Label text="应用地址：" anchorOffsetX="0" width="232" anchorOffsetY="0" textColor="0x302A75" size="34" lineSpacing="34" height="70" verticalCenter="-76" left="47" verticalAlign="middle" textAlign="left"/>
-		<e:Label text="创建时间：" anchorOffsetX="0" width="232" anchorOffsetY="0" textColor="0x302A75" size="34" lineSpacing="34" height="70" verticalCenter="22" left="47" verticalAlign="middle" textAlign="left"/>
-		<e:Label text="奖池余额：" anchorOffsetX="0" width="232" anchorOffsetY="0" textColor="0x302A75" size="34" lineSpacing="34" height="70" verticalCenter="122" left="47" verticalAlign="middle" textAlign="left"/>
-		<e:Label text="下注总金额：" anchorOffsetX="0" width="232" anchorOffsetY="0" textColor="0x302A75" size="34" lineSpacing="34" height="70" verticalCenter="216" left="47" verticalAlign="middle" textAlign="left"/>
+		<e:Image source="yyxx_yym_png" x="47" y="76"/>
+		<e:Image source="yyxx_yydz_png" x="46" y="262"/>
+		<e:Image source="yyxx_xzzje_png" x="48" y="555"/>
+		<e:Image source="yyxx_jcye_png" x="48" y="460"/>
+		<e:Image source="yyxx_cjsj_png" x="48" y="360"/>
+		<e:Image source="yyxx_cjrdz_png" x="48" y="164"/>
 	</e:Group>
 	<e:Image id="close" source="close_png" x="1462.18" y="110.24"/>
 </e:Skin>

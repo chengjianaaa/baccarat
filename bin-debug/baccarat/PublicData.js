@@ -7,7 +7,8 @@ var $PublicData = {
     uploadTxUrl: "http://39.104.81.103/api/addTx.php",
     getContract: "http://39.104.81.103/api/requestContract.php",
     // ContractAddress: "0x7468f623C060c3396E8Baa23F5512bDD2Bfd6B5f",   //合约地址
-    ContractAddress: location.href.split('?')[1],
+    ContractAddress: "0x32D6032D285eFBBE9B4c16536b8f0c494bb266d4",
+    // ContractAddress: location.href.split('?')[1],  //合约地址
     HOST: "ws://39.104.81.103:8561",
     Web3: null,
     Wallet: null,

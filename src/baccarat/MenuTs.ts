@@ -46,29 +46,40 @@ class MenuTs extends eui.Component {
 
         let request = new egret.HttpRequest();
         request.responseType = egret.HttpResponseType.TEXT;
-        request.open($PublicData.getContract, egret.HttpMethod.POST);
+        request.open('contract/Baccarat.sol', egret.HttpMethod.GET);
         request.setRequestHeader("Content-Type", "application/json");
-        request.send(JSON.stringify({
-            "addr": $PublicData.ContractAddress,
-            "pageSize": 200,
-            "pageNum": 1,
-        }));
+        request.send();
         request.addEventListener(egret.Event.COMPLETE, (event) => {
             let request = <egret.HttpRequest>event.currentTarget;
-            let data = JSON.parse(request.response);
-            if (data.result) {
-                if (data.result.length > 0 && data.result[0].txHash) {
-                    $PublicData.Web3.eth.getTransaction(data.result[0].txHash).then((data) => {
-                        $PublicData.panel.sourceCodeLabel.text = $PublicData.Web3.utils.hexToUtf8(data.datasourcecode)
-                    })
-                } else {
-                    $PublicData.panel.sourceCodeLabel.text = "未查询到相关信息";
-                }
-            }
+            $PublicData.panel.sourceCodeLabel.text = request.response;
         }, this);
-        request.addEventListener(egret.IOErrorEvent.IO_ERROR, (err) => {
-            console.log("error:" + String(err));
-        }, this);
+
+        // let request = new egret.HttpRequest();
+        // request.responseType = egret.HttpResponseType.TEXT;
+        // request.open($PublicData.getContract, egret.HttpMethod.POST);
+        // request.setRequestHeader("Content-Type", "application/json");
+        // request.send(JSON.stringify({
+        //     "addr": $PublicData.ContractAddress,
+        //     "pageSize": 200,
+        //     "pageNum": 1,
+        // }));
+        // request.addEventListener(egret.Event.COMPLETE, (event) => {
+        //     let request = <egret.HttpRequest>event.currentTarget;
+        //     let data = JSON.parse(request.response);
+        //     if (data.result) {
+        //         console.log(data.result);
+        //         if (data.result.length > 0 && data.result[0].txHash) {
+        //             $PublicData.Web3.eth.getTransaction(data.result[0].txHash).then((data) => {
+        //                 $PublicData.panel.sourceCodeLabel.text = $PublicData.Web3.utils.hexToUtf8(data.datasourcecode)
+        //             })
+        //         } else {
+        //             $PublicData.panel.sourceCodeLabel.text = "未查询到相关信息";
+        //         }
+        //     }
+        // }, this);
+        // request.addEventListener(egret.IOErrorEvent.IO_ERROR, (err) => {
+        //     console.log("error:" + String(err));
+        // }, this);
     }
 
     /**
@@ -90,8 +101,27 @@ class MenuTs extends eui.Component {
         $PublicData.ContractInstance.methods.getPublicData().call().then((data) => {
             $PublicData.panel.gameName.text = data[0];
             $PublicData.panel.creator.text = data[2];
-            $PublicData.panel.createTime.text = data[3];
-            $PublicData.panel.historyCoin.text =  $PublicData.Web3.utils.fromWei(data[4], 'ether');
+            $PublicData.panel.createTime.text = this.timestampToTime(data[3] * 1000);
+            $PublicData.panel.historyCoin.text = $PublicData.Web3.utils.fromWei(data[4], 'ether');
         });
+    }
+
+    /*
+转换时间
+*/
+    private timestampToTime(timestamp) {
+        let date = new Date(timestamp * 1); //时间戳为10位需*1000，时间戳为13位的话不需乘1000
+        let Y = date.getFullYear() + '.';
+        let M = this.fillZero(date.getMonth() + 1) + '.';
+        let D = this.fillZero(date.getDate()) + ' ';
+        let h = this.fillZero(date.getHours()) + ':';
+        let m = this.fillZero(date.getMinutes()) + ':';
+        let s = this.fillZero(date.getSeconds());
+        return Y + M + D + h + m + s
+    }
+
+    private fillZero(time) {
+        time = time < 10 ? "0" + time : time;
+        return time;
     }
 }
